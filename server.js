@@ -8,15 +8,15 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(5173, () => console.log("Server Running"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = createTransport({
   service: "gmail",
   auth: {
-    user: "********@gmail.com",
-    pass: "",
+    user: "masoudbkhti@gmail.com",
+    pass: "Masoud6613110213",
   },
 });
 
@@ -35,7 +35,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "********@gmail.com",
+    to: "masoudbkhti@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>

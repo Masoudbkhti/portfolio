@@ -1,7 +1,8 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Newsletter from "./Newsletter";
 const MailChimpForm = () => {
-  const postUrl = `${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
+  const postUrl =
+    "https://billigbook.us21.list-manage.com/subscribe/post?u=2f9eb32688eb05ce2aab4e54c&id=f8237fe434";
   return (
     <>
       <MailchimpSubscribe

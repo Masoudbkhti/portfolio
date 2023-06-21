@@ -1,9 +1,25 @@
 import { Alert, Row, Col } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Newsletter = ({ subscribe, status, message }) => {
+const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState("");
-  const handleSubmit = () => {};
+
+  useEffect(() => {
+    if (status === "success") clearFields();
+  }[status]);
+
+  const handleSubmit = () => {
+    e.preventDefault();
+    email &&
+      email.indexOf("0") > -1 &&
+      onValidated({
+        EMAIL: email,
+      });
+  };
+
+  const clearFields = () => {
+    setEmail("");
+  };
 
   return (
     <Col lg={12}>

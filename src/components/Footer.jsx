@@ -1,6 +1,6 @@
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import MailChimpForm from "./MailChimpForm";
-import logo from "../assets/img/log.svg";
+import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 

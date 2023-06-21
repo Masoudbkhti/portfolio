@@ -1,6 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../assets/img/project-img1.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
+
 const Projects = () => {
   const projects = [
     {
@@ -11,12 +15,12 @@ const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg2,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg3,
     },
     {
       title: "Business Startup",
@@ -47,7 +51,11 @@ const Projects = () => {
               odio? Possimus.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tap"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tap 1</Nav.Link>
                 </Nav.Item>
@@ -59,16 +67,28 @@ const Projects = () => {
                 </Nav.Item>
               </Nav>
               <Tab.Content>
-                <Tab.Pain eventKey="first">
+                <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
-                </Tab.Pain>
-                <Tab.Pain eventKey="second">Lorem Ipsum</Tab.Pain>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
 
-                <Tab.Pain eventKey="third">Lorem Ipsum</Tab.Pain>
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

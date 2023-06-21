@@ -44,19 +44,31 @@ const Projects = () => {
               soluta facere commodi minus ipsa nobis vitae ad nisi odit alias
               odio? Possimus.
             </p>
-            <Nav variant="pills" defaultActiveKey="/home">
-              <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="link-1">Option 2</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                  Disabled
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav variant="pills" defaultActiveKey="/home">
+                <Nav.Item>
+                  <Nav.Link eventKey="first">Tap 1</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Tab.Content>
+                <Tab.Pain eventKey="first">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <p>{project.title}</p>;
+                    })}
+                  </Row>
+                </Tab.Pain>
+                <Tab.Pain eventKey="second">Lorem Ipsum</Tab.Pain>
+
+                <Tab.Pain eventKey="third">Lorem Ipsum</Tab.Pain>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
       </Container>

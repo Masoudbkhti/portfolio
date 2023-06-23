@@ -34,10 +34,9 @@ const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                nemo magnam placeat voluptas voluptatem a est magni, odio
-                recusandae nulla, officiis temporibus quidem? Similique fugiat
-                tempora laudantium odio vitae id?
+                I have worked in digital marketing, SEO, front-end web
+                development, teaching German, translating books, creating
+                content, etc. and have had good experiences.
               </p>
               <Carousel
                 responsive={responsive}
@@ -50,15 +49,15 @@ const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="image" />
-                  <h5>Brand Identity</h5>
+                  <h5>Ditigal Marketing</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="image" />
-                  <h5>Logo Design</h5>
+                  <h5>SEO</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="image" />
-                  <h5>Web Development</h5>
+                  <h5>Deutsch</h5>
                 </div>
               </Carousel>
             </div>

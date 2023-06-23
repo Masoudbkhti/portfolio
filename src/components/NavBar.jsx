@@ -79,7 +79,11 @@ function NavBar() {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick="#contact">
+            <button
+              className="vvd"
+              href="#contact"
+              onClick={() => console.log("Connect")}
+            >
               <span>Let's Connect</span>
             </button>
           </span>

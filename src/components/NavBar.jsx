@@ -57,7 +57,7 @@ function NavBar() {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -69,13 +69,13 @@ function NavBar() {
 
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/masoudbkhti/">
                 <img src={navIcon1} alt="" />
               </a>
               <a href="#">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/masoudbkhti">
                 <img src={navIcon3} alt="" />
               </a>
             </div>

@@ -1,8 +1,7 @@
-import express, { Router, json } from "express";
-const router = Router();
-import cors from "cors";
-import { createTransport } from "nodemailer";
-
+const express = require("express");
+const router = express.Router();
+const cors = require("cors");
+const nodemailer = require("nodemailer");
 // server used to send send emails
 const app = express();
 app.use(cors());
@@ -16,7 +15,7 @@ const contactEmail = createTransport({
   service: "gmail",
   auth: {
     user: "masoudbkhti@gmail.com",
-    pass: "Masoud6613110213",
+    pass: "zkrgihdmoeqfmctz",
   },
 });
 

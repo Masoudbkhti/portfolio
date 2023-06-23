@@ -64,10 +64,10 @@ const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Velit harum libero labore optio consectetur maiores ex
-                    voluptatem dolorem nostrum quae aut suscipit, repudiandae
-                    sapiente laborum quibusdam quod. Illum, eum iure?
+                    I'm a front-end web developer who is always learning and
+                    trying to develop optimal websites with beautiful UI and
+                    best UX. I am also interested in German language, AI and
+                    Web3.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let's connect <ArrowRightCircle size={25} />

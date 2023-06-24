@@ -29,7 +29,7 @@ html {
 
 .App {
   text-align: center;
-  width: 100%;
+  width: 100vmax;
 }
 .App-logo {
   height: 40vmin;

@@ -64,6 +64,7 @@ html {
 }
 
 body {
+  width: 100vh;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -522,7 +523,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   width: 100%;
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

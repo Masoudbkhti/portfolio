@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavBar />
       <Banner />
       <Skills />
